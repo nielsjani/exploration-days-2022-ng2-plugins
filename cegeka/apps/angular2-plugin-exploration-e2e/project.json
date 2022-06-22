@@ -1,0 +1,30 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/angular2-plugin-exploration-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/angular2-plugin-exploration-e2e/cypress.json",
+        "devServerTarget": "angular2-plugin-exploration:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "angular2-plugin-exploration:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/angular2-plugin-exploration-e2e/**/*.{js,ts}"
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["angular2-plugin-exploration"]
+}
