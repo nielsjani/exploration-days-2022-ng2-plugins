@@ -1,9 +1,31 @@
 <cegeka-about>
-  <p name-url-slot>First</p>
-  <p aliveness-slot>Second</p>
-  <p usability-slot>Third</p>
-  <p rating-slot>Fourth</p>
-  <p other-slot>Fifth</p>
+  <p name-url-slot><a href='https://github.com/valor-software/ng2-charts'>valor-software/ng2-charts</a></p>
+  <p aliveness-slot>Active on github issues & pushing new code + recently released new version on npm </p>
+  <p usability-slot><a href='https://valor-software.com/ng2-charts/#PieChart'>Examples</a> + some minor 'General' info. This library is a wrapper around chart.js, so if you have questions, you often need to go looking at chart.js (stackoverflow posts) and try to map their fix to the wrapper-implementation of ng2-charts</p>
+  <p rating-slot>Seems like an ok solution for simple charts</p>
+  <p other-slot>
+    <b>Why this library?</b>
+    Initially looked at <a href='https://github.com/swimlane/ngx-charts'>swimlane/ngx-charts</a> but that one hasn't had a release for 4 months and > 600 open Github issues.
+    There also was no 'real' documentation, just some code examples for each chart type. # weekly downloads wasn't too bad at +-130K, but ng2-charts sits at +-180K, has had a release last month and 'only' 120-ish open Github issues
+  </p>
 </cegeka-about>
 
-<p>charts works!</p>
+<div>
+  <div>
+    <div class="chart">
+      <canvas baseChart
+              height='300px'
+              [data]="pieChartData"
+              [type]="pieChartType"
+              [options]="pieChartOptions"
+              [plugins]="pieChartPlugins">
+      </canvas>
+    </div>
+  </div>
+</div>
+<div class="button-row">
+  <button (click)="toggleLegend()">Toggle Legend</button>
+  <button (click)="addSlice()">Add Slice</button>
+  <button (click)="removeSlice()">Remove Slice</button>
+  <button (click)="changeLegendPosition()">Change Legend Position</button>
+</div>
