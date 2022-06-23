@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "angular2-plugin-exploration": "apps/angular2-plugin-exploration",
-    "angular2-plugin-exploration-e2e": "apps/angular2-plugin-exploration-e2e"
+    "angular2-plugin-exploration-e2e": "apps/angular2-plugin-exploration-e2e",
+    "home": "libs/home"
   }
 }
