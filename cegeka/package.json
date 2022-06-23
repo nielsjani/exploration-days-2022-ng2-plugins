@@ -9,7 +9,7 @@
     "serve": "nx serve angular2-plugin-exploration",
     "build": "nx build",
     "test": "nx test",
-    "component": "npx nx g c --project=home --export",
+    "component:home": "npx nx g c --project=home --export",
     "lib": "npx nx g @nrwl/angular:lib"
   },
   "private": true,
