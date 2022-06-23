@@ -1,10 +1,13 @@
-<div style='background-color: darkgrey; padding: 15px'>
+<button *ngIf='aboutHidden' (click)='toggleAbout()'>Show about</button>
+<button *ngIf='!aboutHidden' (click)='toggleAbout()'>Hide about</button>
+
+<div style='background-color: darkgrey; padding: 15px' *ngIf='!aboutHidden'>
   <b>Name & URLS:</b>
   <p style='color: lightgray'>Url to npm, github, documentation</p>
   <ng-content select='[name-url-slot]'></ng-content>
 
   <b>Aliveness check</b>
-  <p style='color: lightgray'>Is this codebase still maintained? Code recently updated? New npm version released? Reacts
+  <p style='color: lightgray'>Is this codebase still maintained? Code recently updated? New npm version released? # weekly downloads on npm? Reacts
     to bug reports?</p>
   <ng-content select='[aliveness-slot]'></ng-content>
 
@@ -14,9 +17,10 @@
   <ng-content select='[usability-slot]'></ng-content>
 
   <b>Rating</b>
-  <p style='color: lightgray'>Would use on project/Would not use it on your project/Would rather not use it, but there's no alternative</p>
+  <p style='color: lightgray'>Would use on project/Would not use it on your project/Would rather not use it, but there's no alternative/...</p>
   <ng-content select='[rating-slot]'></ng-content>
 
   <b>Other notes</b>
+  <p style='color: lightgray'>Alternatives? Why pick this library over the others?</p>
   <ng-content select='[other-slot]'></ng-content>
 </div>

@@ -3,10 +3,18 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'cegeka-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
+  styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  constructor() {}
+  aboutHidden = true;
 
-  ngOnInit(): void {}
+  constructor() {
+  }
+
+  ngOnInit(): void {
+  }
+
+  toggleAbout() {
+    this.aboutHidden = !this.aboutHidden;
+  }
 }
