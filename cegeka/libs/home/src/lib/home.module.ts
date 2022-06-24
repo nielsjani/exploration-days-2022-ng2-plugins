@@ -13,8 +13,10 @@ import { PijpenComponent } from './pijpen/pijpen.component';
 import { NgPipesModule } from 'ngx-pipes';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { FiledropperComponent } from './filedropper/filedropper.component';
-import { NgxDropzoneModule } from 'ngx-dropzone';
+import {NgxDropzoneModule} from "ngx-dropzone";
+import {FilePickerModule} from "ngx-awesome-uploader";
 import { InfiniscrollComponent } from './infiniscroll/infiniscroll.component';
+import {MyFilePickerAdapter} from "./filedropper/my-file-picker.adapter";
 import { AuguryComponent } from './augury/augury.component';
 
 @NgModule({
@@ -26,6 +28,7 @@ import { AuguryComponent } from './augury/augury.component';
     NgPipesModule,
     NgxDropzoneModule,
     InfiniteScrollModule,
+    FilePickerModule
   ],
   declarations: [
     HomeComponent,

@@ -6,9 +6,29 @@
   <p other-slot> looks fancy with just default implementation </p>
 </cegeka-about>
 
+<cegeka-about>
+  <p name-url-slot><a href='https://github.com/vugar005/ngx-awesome-uploader'>ngx-awesome-uplaoder</a></p>
+  <p aliveness-slot>Last push April 2022, Github issues seem very active</p>
+  <p usability-slot>Okey documentation on how to get it to setup but very good demo to go with the setup</p>
+  <p rating-slot>little harder to setup up but works well, would use for images upload</p>
+  <p other-slot> looks fancy with just default implementation </p>
+</cegeka-about>
+
+<h1>ngx-dropzone</h1>
+
 <ngx-dropzone (change)="onSelect($event)">
   <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
   <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
     <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
   </ngx-dropzone-preview>
 </ngx-dropzone>
+
+<h1>ngx-awesome-uplaoder</h1>
+
+<div class="uploader-wrapper">
+  <ngx-awesome-uploader
+    [adapter]="adapter"
+    (uploadSuccess)="uploadSuccess($event)"
+  >
+  </ngx-awesome-uploader>
+</div>

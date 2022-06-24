@@ -32,6 +32,7 @@
     "hatool": "^0.9.1",
     "moment": "^2.29.3",
     "ng2-charts": "^3.0.11",
+    "ngx-awesome-uploader": "^13.0.1",
     "ngx-dropzone": "^3.1.0",
     "ngx-infinite-scroll": "^13.0.2",
     "ngx-pipes": "^3.0.0",
