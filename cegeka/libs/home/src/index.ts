@@ -9,3 +9,5 @@ export * from './lib/charts/charts.component';
 export * from './lib/tree/trees.component';
 
 export * from './lib/user-idle/user-idle.component';
+
+export * from './lib/pijpen/pijpen.component';

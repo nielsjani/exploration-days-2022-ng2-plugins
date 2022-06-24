@@ -1,0 +1,19 @@
+<cegeka-about>
+  <p name-url-slot><a href='https://www.npmjs.com/package/ngx-pipes'>ngx-pipes</a></p>
+  <p aliveness-slot>Published last in january; 27k downloads, semi active on gh issues </p>
+  <p usability-slot>Easy to use, every pipe documented with an example :chefs_kiss:</p>
+  <p rating-slot>This pipe provides everything that is missing from your life</p>
+  <p other-slot>Useful for pretty much every project</p>
+</cegeka-about>
+
+<p>{{'This is a long text but was shortened by a pipe' | shorten:31}}</p>
+<p *ngFor='let word of wordsForAOrAnPipe'>Today I will greet {{word | aOrAn}}</p>
+
+<p>Updated: {{now | timeAgo}}</p>
+<p>Updated: {{minutesAgo | timeAgo}}</p>
+<p>Updated: {{hourAgo | timeAgo}}</p>
+<p>Updated: {{dayAgo | timeAgo}}</p>
+<p>Updated: {{weekAgo | timeAgo}}</p>
+
+<li *ngFor='let item of fullArray | reverse | truthify | unique | intersection: intersection'>{{item}} </li>
+
