@@ -7,7 +7,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule, Routes } from '@angular/router';
 import {
   ChartsComponent,
-  ChatbotComponent,
+  ChatbotComponent, FiledropperComponent,
   HomeComponent,
   PijpenComponent,
   TreesComponent,
@@ -21,7 +21,8 @@ const routes: Routes = [
   { path: 'tree', component: TreesComponent },
   { path: 'user-idle', component: UserIdleComponent },
   {path: 'chatbot', component: ChatbotComponent},
-  { path: 'pipes', component: PijpenComponent }
+  { path: 'pipes', component: PijpenComponent },
+  { path: 'file-droppper', component: FiledropperComponent }
 ];
 
 @NgModule({

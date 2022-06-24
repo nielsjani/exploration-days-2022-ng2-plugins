@@ -13,3 +13,5 @@ export * from './lib/tree/trees.component';
 export * from './lib/user-idle/user-idle.component';
 
 export * from './lib/pijpen/pijpen.component';
+
+export * from './lib/filedropper/filedropper.component';
