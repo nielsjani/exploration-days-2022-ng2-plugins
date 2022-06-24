@@ -15,3 +15,5 @@ export * from './lib/user-idle/user-idle.component';
 export * from './lib/pijpen/pijpen.component';
 
 export * from './lib/infiniscroll/infiniscroll.component';
+
+export * from './lib/filedropper/filedropper.component';

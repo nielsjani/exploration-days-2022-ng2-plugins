@@ -13,6 +13,8 @@ import { PijpenComponent } from './pijpen/pijpen.component';
 import { NgPipesModule } from 'ngx-pipes';
 import { InfiniscrollComponent } from './infiniscroll/infiniscroll.component';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { FiledropperComponent } from './filedropper/filedropper.component';
+import {NgxDropzoneModule} from "ngx-dropzone";
 
 @NgModule({
   imports: [
@@ -21,6 +23,7 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
     TreeModule,
     HatoolLibModule,
     NgPipesModule,
+    NgxDropzoneModule,
     InfiniteScrollModule
   ],
   declarations: [
@@ -31,7 +34,8 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
     UserIdleComponent,
     ChatbotComponent,
     PijpenComponent,
-    InfiniscrollComponent,
+    FiledropperComponent,
+    InfiniteScrollModule
   ],
   exports: [
     HomeComponent,
@@ -41,7 +45,8 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
     ChatbotComponent,
     UserIdleComponent,
     PijpenComponent,
-    InfiniscrollComponent,
+    FiledropperComponent,
+    InfiniteScrollModule
   ],
 })
 export class HomeModule {}

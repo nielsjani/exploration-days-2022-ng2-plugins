@@ -1,0 +1,14 @@
+<cegeka-about>
+  <p name-url-slot><a href='https://github.com/peterfreeman/ngx-dropzone'>ngx-dropzone</a></p>
+  <p aliveness-slot>Last push February 2022, Github issues seem very active</p>
+  <p usability-slot>good documentation on how to get it to setup + good explanation of what the code does</p>
+  <p rating-slot>easy to use and does what it says, would use</p>
+  <p other-slot> looks fancy with just default implementation </p>
+</cegeka-about>
+
+<ngx-dropzone (change)="onSelect($event)">
+  <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
+  <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+    <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+  </ngx-dropzone-preview>
+</ngx-dropzone>

@@ -8,7 +8,9 @@ import { RouterModule, Routes } from '@angular/router';
 import {
   ChartsComponent,
   ChatbotComponent,
-  HomeComponent, InfiniscrollComponent,
+  HomeComponent,
+  InfiniscrollComponent,
+  FiledropperComponent,
   PijpenComponent,
   TreesComponent,
   UserIdleComponent
@@ -21,9 +23,9 @@ const routes: Routes = [
   { path: 'tree', component: TreesComponent },
   { path: 'user-idle', component: UserIdleComponent },
   {path: 'chatbot', component: ChatbotComponent},
-  { path: 'pipes', component: PijpenComponent },
   { path: 'infiniscroll', component: InfiniscrollComponent },
-
+  { path: 'pipes', component: PijpenComponent },
+  { path: 'file-droppper', component: FiledropperComponent }
 ];
 
 @NgModule({
