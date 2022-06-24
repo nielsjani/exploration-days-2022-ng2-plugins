@@ -13,7 +13,7 @@ import {
   FiledropperComponent,
   PijpenComponent,
   TreesComponent,
-  UserIdleComponent
+  UserIdleComponent, AuguryComponent
 } from '@cegeka/home';
 import { NgIdleKeepaliveModule } from '@ng-idle/keepalive';
 
@@ -25,7 +25,8 @@ const routes: Routes = [
   {path: 'chatbot', component: ChatbotComponent},
   { path: 'infiniscroll', component: InfiniscrollComponent },
   { path: 'pipes', component: PijpenComponent },
-  { path: 'file-droppper', component: FiledropperComponent }
+  { path: 'file-droppper', component: FiledropperComponent },
+  { path: 'augury', component: AuguryComponent },
 ];
 
 @NgModule({

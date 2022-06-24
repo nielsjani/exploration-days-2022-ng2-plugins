@@ -17,3 +17,5 @@ export * from './lib/pijpen/pijpen.component';
 export * from './lib/infiniscroll/infiniscroll.component';
 
 export * from './lib/filedropper/filedropper.component';
+
+export * from './lib/augury/augury.component';
