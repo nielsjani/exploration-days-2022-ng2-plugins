@@ -17,4 +17,5 @@ export class AboutComponent implements OnInit {
   toggleAbout() {
     this.aboutHidden = !this.aboutHidden;
   }
+
 }
