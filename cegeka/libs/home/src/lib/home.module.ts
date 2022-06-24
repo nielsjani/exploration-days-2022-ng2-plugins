@@ -11,10 +11,10 @@ import { HatoolLibModule } from 'hatool';
 import { UserIdleComponent } from './user-idle/user-idle.component';
 import { PijpenComponent } from './pijpen/pijpen.component';
 import { NgPipesModule } from 'ngx-pipes';
-import { InfiniscrollComponent } from './infiniscroll/infiniscroll.component';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { FiledropperComponent } from './filedropper/filedropper.component';
-import {NgxDropzoneModule} from "ngx-dropzone";
+import { NgxDropzoneModule } from 'ngx-dropzone';
+import { InfiniscrollComponent } from './infiniscroll/infiniscroll.component';
 
 @NgModule({
   imports: [
@@ -35,7 +35,7 @@ import {NgxDropzoneModule} from "ngx-dropzone";
     ChatbotComponent,
     PijpenComponent,
     FiledropperComponent,
-    InfiniteScrollModule
+    InfiniscrollComponent
   ],
   exports: [
     HomeComponent,
@@ -46,7 +46,7 @@ import {NgxDropzoneModule} from "ngx-dropzone";
     UserIdleComponent,
     PijpenComponent,
     FiledropperComponent,
-    InfiniteScrollModule
+    InfiniscrollComponent
   ],
 })
 export class HomeModule {}
