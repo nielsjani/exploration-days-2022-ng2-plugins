@@ -1,0 +1,21 @@
+<cegeka-about>
+  <p name-url-slot><a href='https://angular2-tree.readme.io/docs/getting-started'>angular2-tree</a></p>
+  <p aliveness-slot>Last push June 2021, Github issues still seems somwhat active</p>
+  <p usability-slot>Very good documentation, no real issues encountered</p>
+  <p rating-slot>Not much new activity, but might be feature complete? Would use</p>
+  <p other-slot>
+    If your app uses eg angular material, their tree might work as well, but if you don't want to pull all that overhead into your project just for one visualisation component, this package will do
+   </p>
+</cegeka-about>
+
+<p>Drag and drop enabled. Dragging only enabled for non-leaf nodes</p>
+
+
+<tree-root #tree [nodes]="nodes" [options]="options" (nodeActivate)='handleNodeClicked($event)'></tree-root>
+
+<button (click)='addTrench()'>Add Trench</button>
+<button (click)='removeTrench()'>Remove Trench</button>
+<button (click)='addTrenchSong()'>Add Trench song</button>
+<!--<button (click)='invertRtl()'>Swap sides</button>-->
+
+<p>Clicked leafs: {{clickHistory}}</p>
