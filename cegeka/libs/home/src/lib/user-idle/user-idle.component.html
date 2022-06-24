@@ -1,0 +1,16 @@
+<cegeka-about>
+  <p name-url-slot><a href='https://moribvndvs.github.io/ng2-idle/quickstart'>ng-2idle</a></p>
+  <p aliveness-slot>Last publish Q4 2021, Github issues still seems active, but not much issues logged since the start of '22</p>
+  <p usability-slot>Documentation is good to get you started and probably has all you will ever need from this library.</p>
+  <p rating-slot>Looks good. Not really under very active development, it seems, but according to npm >90k downloads/week.</p>
+  <p other-slot>
+    Tried https://www.npmjs.com/package/angular-user-idle, but that one relies on an @angular-common version that was too low for the angular version this app currently uses. This one seemed cleaner to use and more recently updated according to the available docs, but also had a lot less downloads at <20k
+  </p>
+</cegeka-about>
+
+
+<p>User considered idle after 3 seconds, considered timed out after 4 more</p>
+<p>Going from idle to active state is possible, but once you're timed out, you're stuck in that state</p>
+<p>Currently configured to reset that idle count down by left clicking</p>
+
+<div>IDLE_STATE: {{idleState}}, COUNTDOWN UNTIL TIMEOUT: {{countdown}}, LAST_PING: {{lastPing | date}}</div>

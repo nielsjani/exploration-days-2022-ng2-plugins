@@ -6,10 +6,12 @@ import { ChartsComponent } from './charts/charts.component';
 import { NgChartsModule } from 'ng2-charts';
 import { TreesComponent } from './tree/trees.component';
 import { TreeModule } from '@circlon/angular-tree-component';
+import { UserIdleComponent } from './user-idle/user-idle.component';
 
 @NgModule({
   imports: [CommonModule, NgChartsModule, TreeModule],
-  declarations: [HomeComponent, AboutComponent, ChartsComponent, TreesComponent],
-  exports: [HomeComponent, AboutComponent, ChartsComponent, TreesComponent],
+  declarations: [HomeComponent, AboutComponent, ChartsComponent, TreesComponent, UserIdleComponent],
+  exports: [HomeComponent, AboutComponent, ChartsComponent, TreesComponent, UserIdleComponent]
 })
-export class HomeModule {}
+export class HomeModule {
+}
