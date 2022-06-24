@@ -1,0 +1,21 @@
+<cegeka-about>
+  <p name-url-slot><a href='https://www.npmjs.com/package/ngx-infinite-scroll'>ngx-infinite-scroll</a></p>
+  <p aliveness-slot>Last publish april 2022, >200k weekly downloads</p>
+  <p usability-slot>Pretty easy to use, example works well. Numbers to configure component still feel a bit magic and might need some trial-and-error to configure correctly on a real project</p>
+  <p rating-slot>Use it if the need arises</p>
+  <p other-slot>
+    /
+  </p>
+</cegeka-about>
+
+<div class="search-results"
+     infinite-scroll
+     [infiniteScrollDistance]="scrollDistance"
+     [infiniteScrollUpDistance]="scrollUpDistance"
+     [infiniteScrollThrottle]="throttle"
+     (scrolled)="onScrollDown($event)"
+     (scrolledUp)="onUp($event)">
+  <p *ngFor="let i of array">
+    {{ i }}
+  </p>
+</div>
